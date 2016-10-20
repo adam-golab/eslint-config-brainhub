@@ -142,7 +142,7 @@ module.exports = {
     'no-void': 2,
     'no-warning-comments': 2,
     'no-with': 2,
-    'radix': "always",
+    'radix': [2, "as-needed"],
     // 'vars-on-top': 0,
     // 'wrap-iife': 0,
     // 'yoda': 0,
