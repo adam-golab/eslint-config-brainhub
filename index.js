@@ -17,6 +17,9 @@
 'use strict';
 
 module.exports = {
+  env: {
+    es6: true
+  },
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
