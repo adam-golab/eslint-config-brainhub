@@ -16,7 +16,16 @@
 
 'use strict';
 
-module.exports = {
+module.exports =
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors"
+  ],
+  plugins: [
+    "react",
+    "import"
+  ],
   rules: {
     // The rules below are listed in the order they appear on the eslint
     // rules page. All rules are listed to make it easier to keep in sync
@@ -31,12 +40,12 @@ module.exports = {
     // Possible Errors
     // http://eslint.org/docs/rules/#possible-errors
     // ---------------------------------------------
-    'no-cond-assign': 0, // eslint:recommended
-    // 'no-console': 2, // eslint:recommended
+    'no-cond-assign': 2, // eslint:recommended
+    'no-console': 1, // eslint:recommended 2
     // 'no-condition': 2, // eslint:recommended
     // 'no-constant-condition': 2, // eslint:recommended
     // 'no-control-regex': 2, // eslint:recommended
-    // 'no-debugger': 2, // eslint:recommended
+    'no-debugger': 1, // eslint:recommended 2
     // 'no-dupe-args': 2, // eslint:recommended
     // 'no-dupe-keys': 2, // eslint:recommended
     // 'no-duplicate-case': 2, // eslint:recommended
@@ -58,7 +67,7 @@ module.exports = {
     'no-unexpected-multiline': 2, // eslint:recommended
     // 'no-unreachable': 2, // eslint:recommended
     // 'no-unsafe-finally': 2, // eslint:recommended
-    // 'no-unsafe-negation': 0,
+    'no-unsafe-negation': 2,
     // 'use-isnan': 2 // eslint:recommended
     'valid-jsdoc': [2, {
       requireParamDescription: false,
@@ -78,42 +87,41 @@ module.exports = {
     // 'class-methods-use-this': 0,
     // 'complexity': 0,
     // 'consistent-return': 0
-    // 'curly': 0, // TODO(philipwalton): add an option to enforce braces with
-                   // the exception of simple, single-line if statements.
-    // 'default-case': 0,
+    'curly': 2,
+    'default-case': 2,
     // 'dot-location': 0,
-    // 'dot-notation': 0,
-    // 'eqeqeq': 0,
+    'dot-notation': 2,
+    'eqeqeq': 2,
     'guard-for-in': 2,
-    // 'no-alert': 0,
+    'no-alert': 1,
     'no-caller': 2,
     // 'no-case-declarations': 2, // eslint:recommended
     // 'no-div-regex': 0,
     // 'no-else-return': 0,
-    // 'no-empty-function': 0,
+    'no-empty-function': 2,
     // 'no-empty-pattern': 2, // eslint:recommended
     // 'no-eq-null': 0,
     // 'no-eval': 0,
     'no-extend-native': 2,
     'no-extra-bind': 2,
-    // 'no-extra-label': 0,
+    'no-extra-label': 2,
     // 'no-fallthrough': 2, // eslint:recommended
     // 'no-floating-decimal': 0,
-    // 'no-global-assign': 0,
+    'no-global-assign': 2,
     // 'no-implicit-coercion': 0,
     // 'no-implicit-globals': 0,
     // 'no-implied-eval': 0,
     'no-invalid-this': 2,
     // 'no-iterator': 0,
-    // 'no-labels': 0,
+    'no-labels': 2,
     // 'no-lone-blocks': 0,
-    // 'no-loop-func': 0,
+    'no-loop-func': 2,
     // 'no-magic-numbers': 0,
     'no-multi-spaces': 2,
     'no-multi-str': 2,
-    // 'no-new-func': 0,
+    'no-new-func': 2,
     'no-new-wrappers': 2,
-    // 'no-new': 0,
+    'no-new': 2,
     // 'no-octal-escape': 0,
     // 'no-octal': 2, // eslint:recommended
     // 'no-param-reassign': 0,
@@ -125,16 +133,16 @@ module.exports = {
     // 'no-self-compare': 0,
     // 'no-sequences': 0,
     'no-throw-literal': 2, // eslint:recommended
-    // 'no-unmodified-loop-condition': 0,
-    // 'no-unused-expressions': 0,
+    'no-unmodified-loop-condition': 2,
+    // 'no-unused-expressions': 2,
     // 'no-unused-labels': 2, // eslint:recommended
     // 'no-useless-call': 0,
     // 'no-useless-concat': 0,
     // 'no-useless-escape': 0,
-    // 'no-void': 0,
-    // 'no-warning-comments': 0,
+    'no-void': 2,
+    'no-warning-comments': 2,
     'no-with': 2,
-    // 'radix': 0,
+    'radix': "always",
     // 'vars-on-top': 0,
     // 'wrap-iife': 0,
     // 'yoda': 0,
@@ -153,12 +161,12 @@ module.exports = {
     // 'no-label-var': 0,
     // 'no-restricted-globals': 0,
     // 'no-shadow-restricted-names': 0,
-    // 'no-shadow': 0,
+    'no-shadow': 0,
     // 'no-undef-init': 0,
-    // 'no-undef': 2, // eslint:recommended
-    // 'no-undefined': 0,
+    'no-undef': 2, // eslint:recommended
+    'no-undefined': 2,
     'no-unused-vars': [2, {args: 'none'}], // eslint:recommended
-    // 'no-use-before-define': 0,
+    'no-use-before-define': 2,
 
     // Node.js and CommonJS
     // http://eslint.org/docs/rules/#nodejs-and-commonjs
@@ -186,7 +194,7 @@ module.exports = {
     'comma-spacing': 2,
     'comma-style': 2,
     'computed-property-spacing': 2,
-    // 'consistent-this': 0,
+    'consistent-this': 2,
     'eol-last': 2,
     'func-call-spacing': 2,
     // 'func-names': 0,
@@ -196,19 +204,21 @@ module.exports = {
     // 'id-match': 0,
     // 'indent': 0, // TODO(philipwalton): this rule isn't compatible with
                     // Google's 4-space indent for line continuations.
-    // 'jsx-quotes': 0,
+    'jsx-quotes': [2, 'prefer-double'],
     'key-spacing': 2,
-    'keyword-spacing': 0,
+    'keyword-spacing': 2,
     // 'line-comment-position': 0,
-    'linebreak-style': 2,
+    'linebreak-style': 0,
     // 'lines-around-comment': 0,
     // 'lines-around-directive': 0,
     // 'max-depth': 0,
     'max-len': [2, {
-      code: 80,
+      code: 120,
       tabWidth: 2,
+      ignoreComments: true,
       ignoreUrls: true,
-      ignorePattern: '^goog\.(module|require)',
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true
     }],
     // 'max-lines': 0,
     // 'max-nested-callbacks': 0,
@@ -218,7 +228,7 @@ module.exports = {
     // 'multiline-ternary': 0, // TODO(philipwalton): add a rule to enfore the
                                // operator appearing at the end of the line.
     'new-cap': 2,
-    // 'new-parens': 0,
+    'new-parens': 2,
     // 'newline-after-var': 0,
     // 'newline-before-return': 0,
     // 'newline-per-chained-call': 0,
@@ -226,7 +236,7 @@ module.exports = {
     // 'no-bitwise': 0,
     // 'no-continue': 0,
     // 'no-inline-comments': 0,
-    // 'no-lonely-if': 0,
+    'no-lonely-if': 2,
     // 'no-mixed-operators': 0,
     'no-mixed-spaces-and-tabs': 2, // eslint:recommended
     'no-multiple-empty-lines': [2, {max: 2}],
@@ -240,9 +250,9 @@ module.exports = {
     'no-trailing-spaces': 2,
     // 'no-underscore-dangle': 0,
     // 'no-unneeded-ternary': 0,
-    // 'no-whitespace-before-property': 0,
+    'no-whitespace-before-property': 2,
     // 'object-curly-newline': 0,
-    'object-curly-spacing': 2,
+    'object-curly-spacing': [2, 'always'],
     // 'object-property-newline': 0,
     // 'one-var-declaration-per-line': 0,
     'one-var': [2, {
@@ -253,15 +263,9 @@ module.exports = {
     // 'operator-assignment': 0,
     // 'operator-linebreak': 0,
     'padded-blocks': [2, 'never'],
-    'quote-props': [2, 'consistent'],
+    'quote-props': [2, 'as-needed'],
     'quotes': [2, 'single', {allowTemplateLiterals: true}],
-    'require-jsdoc': [2, {
-      require: {
-        FunctionDeclaration: true,
-        MethodDefinition: true,
-        ClassDeclaration: true,
-      },
-    }],
+    'require-jsdoc': 0,
     'semi-spacing': 2,
     'semi': 2,
     // 'sort-keys': 0,
@@ -279,13 +283,10 @@ module.exports = {
     // http://eslint.org/docs/rules/#ecmascript-6
     // ------------------------------------------
     // 'arrow-body-style': 0,
-    'arrow-parens': [2, 'always'], // TODO(philipwalton): technically arrow
-                                   // parens are optional but recommended.
-                                   // ESLint doesn't support a *consistent*
-                                   // setting so "always" is used.
-    // 'arrow-spacing': 0,
+    'arrow-parens': [2, 'as-needed'],
+    'arrow-spacing': 2,
     'constructor-super': 2, // eslint:recommended
-    'generator-star-spacing': [2, 'after'],
+    'generator-star-spacing': [2, 'before'],
     // 'no-class-assign': 0,
     // 'no-confusing-arrow': 0,
     // 'no-const-assign': 0, // eslint:recommended
@@ -300,7 +301,7 @@ module.exports = {
     'no-var': 2,
     // 'object-shorthand': 0,
     // 'prefer-arrow-callback': 0,
-    // 'prefer-const': 0,
+    'prefer-const': 2,
     // 'prefer-numeric-literals': 0,
     // 'prefer-reflect': 0,
     'prefer-rest-params': 2,
@@ -311,6 +312,6 @@ module.exports = {
     // 'sort-imports': 0,
     // 'symbol-description': 0,
     // 'template-curly-spacing': 0,
-    'yield-star-spacing': [2, 'after'],
+    'yield-star-spacing': [2, 'before'],
   },
 };
