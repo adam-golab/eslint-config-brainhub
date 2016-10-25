@@ -6,7 +6,7 @@ module.exports = {
     sourceType: "module",
     ecmaFeatures: {
       jsx: true,
-      spread: true
+      experimentalObjectRestSpread: true
     }
   },
   env: {
