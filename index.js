@@ -6,9 +6,10 @@ module.exports = {
     sourceType: "module",
     ecmaFeatures: {
       jsx: true,
-      experimentalObjectRestSpread: true
+      experimentalObjectRestSpread: true,
     }
   },
+  parser: 'babel-eslint',
   env: {
     es6: true,
     browser: true,
