@@ -104,7 +104,7 @@ module.exports = {
       let: 'never',
       const: 'never',
     }],
-    'operator-linebreak': [2, 'after', { 'overrides': { '?': 'before', ':': 'before' } }],
+    'operator-linebreak': [2, 'before'],
     'padded-blocks': [2, 'never'],
     'quote-props': [2, 'as-needed'],
     'quotes': [2, 'single', {allowTemplateLiterals: true}],
