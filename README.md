@@ -1,4 +1,5 @@
 # eslint-config-brainhub
+![codeship](https://codeship.com/projects/2b9b1450-c5dd-0134-564a-5aca8525b5fa/status?branch=master)
 
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for the Brainhub JavaScript style guide
 
