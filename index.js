@@ -59,7 +59,7 @@ module.exports = {
     'no-throw-literal': 2,
     'no-unmodified-loop-condition': 2,
     'no-void': 2,
-    'no-warning-comments': 2,
+    'no-warning-comments': 1,
     'no-with': 2,
     'radix': [2, "as-needed"],
     'no-shadow': 0,
