@@ -77,6 +77,7 @@ module.exports = {
     'consistent-this': 2,
     'eol-last': 2,
     'func-call-spacing': 2,
+    'indent': [2, 2],
     'jsx-quotes': [2, 'prefer-double'],
     'key-spacing': 2,
     'keyword-spacing': 2,
@@ -121,6 +122,7 @@ module.exports = {
     'no-new-symbol': 2,
     'no-this-before-super': 2,
     'no-var': 2,
+    'object-shorthand': [2, 'always'],
     'prefer-const': 2,
     'prefer-rest-params': 2,
     'prefer-spread': 2,
@@ -137,5 +139,6 @@ module.exports = {
     'react/jsx-no-bind': [2, { 'ignoreRefs': true} ],
     'react/jsx-no-duplicate-props': 2,
     'react/jsx-pascal-case': 2,
+    'react/jsx-indent': [2, 2],
   },
 };
