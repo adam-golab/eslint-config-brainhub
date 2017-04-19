@@ -77,7 +77,7 @@ module.exports = {
     'consistent-this': 2,
     'eol-last': 2,
     'func-call-spacing': 2,
-    'indent': [2, 2],
+    'indent': [2, 2, { SwitchCase: 1 }],
     'jsx-quotes': [2, 'prefer-double'],
     'key-spacing': 2,
     'keyword-spacing': 2,
