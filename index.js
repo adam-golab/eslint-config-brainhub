@@ -25,6 +25,7 @@ module.exports = {
     "import"
   ],
   rules: {
+
     'no-cond-assign': 2,
     'no-console': 1,
     'no-debugger': 1,
@@ -56,6 +57,7 @@ module.exports = {
     'no-new-func': 2,
     'no-new-wrappers': 2,
     'no-new': 2,
+    'no-return-assign': [2, 'always'],
     'no-throw-literal': 2,
     'no-unmodified-loop-condition': 2,
     'no-void': 2,
@@ -140,5 +142,6 @@ module.exports = {
     'react/jsx-no-duplicate-props': 2,
     'react/jsx-pascal-case': 2,
     'react/jsx-indent': [2, 2],
+    'react/jsx-first-prop-new-line': [2, 'multiline']
   },
 };
