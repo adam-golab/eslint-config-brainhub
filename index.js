@@ -151,6 +151,7 @@ module.exports = {
         '/^render.+$/',
         'render'
       ]
-    }]
+    }],
+    'import/first': 2
   },
 };
