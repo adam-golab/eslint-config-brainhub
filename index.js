@@ -142,6 +142,15 @@ module.exports = {
     'react/jsx-no-duplicate-props': 2,
     'react/jsx-pascal-case': 2,
     'react/jsx-indent': [2, 2],
-    'react/jsx-first-prop-new-line': [2, 'multiline']
+    'react/jsx-first-prop-new-line': [2, 'multiline'],
+    'react/sort-comp': [2, {
+      order: [
+        'static-methods',
+        'lifecycle',
+        'everything-else',
+        '/^render.+$/',
+        'render'
+      ]
+    }]
   },
 };
