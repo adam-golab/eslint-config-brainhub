@@ -117,6 +117,7 @@ module.exports = {
     'space-before-blocks': 2,
     'space-before-function-paren': [2, 'never'],
     'spaced-comment': [2, 'always'],
+    'arrow-body-style': [2, 'as-needed'],
     'arrow-parens': [2, 'as-needed'],
     'arrow-spacing': 2,
     'constructor-super': 2,
