@@ -57,7 +57,7 @@ module.exports = {
     'no-new-func': 2,
     'no-new-wrappers': 2,
     'no-new': 2,
-    'no-return-assign': [2, 'always'],
+    'no-return-assign': 0,
     'no-throw-literal': 2,
     'no-unmodified-loop-condition': 2,
     'no-void': 2,
