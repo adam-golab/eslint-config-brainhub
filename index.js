@@ -92,7 +92,7 @@ module.exports = {
       ignoreStrings: true,
       ignoreTemplateLiterals: true
     }],
-    'new-cap': 2,
+    'new-cap': 0,
     'new-parens': 2,
     'no-array-constructor': 2,
     'no-lonely-if': 2,
