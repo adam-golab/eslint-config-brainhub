@@ -35,14 +35,14 @@
     "hint"
   ],
   "devDependencies": {
-    "eslint": "^4.1.1"
+    "eslint": "^4.10.0"
   },
   "peerDependencies": {
     "eslint": ">=3.5.0"
   },
   "dependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint-plugin-import": "^2.6.1",
-    "eslint-plugin-react": "^7.1.0"
+    "babel-eslint": "^8.0.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.4.0"
   }
 }
