@@ -23,6 +23,10 @@ Once the `eslint-config-brainhub` package is installed, you can use it by specif
 }
 ```
 
+## Rules
+
+See [RULES.md](RULES.md) file
+
 ## License
 
 Apache-2 © Brainhub
