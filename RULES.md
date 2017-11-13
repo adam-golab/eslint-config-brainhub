@@ -1267,7 +1267,7 @@ This rule disallows quotes around object literal property names that are not str
 ```javascript
 // INCORRECT
 const object = {
-  'foo': 'bar,
+  'foo': 'bar',
   'baz': 42,
   'true': 0,
   '0': 0,
