@@ -1620,7 +1620,7 @@ class A extends B {
 
 ### no-var (**error**)
 
-This rule is aimed at discouraging the use of var and encouraging the use of const or let instead.
+This rule is aimed at discouraging the use of `var` and encouraging the use of `const` or `let` instead.
 
 ```javascript
 // INCORRECT
