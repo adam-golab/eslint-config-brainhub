@@ -1,10 +1,9 @@
 # eslint-config-brainhub
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/adam-golab/eslint-config-brainhub.svg)](https://greenkeeper.io/)
-
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for the Brainhub JavaScript style guide
 
 [![CircleCI](https://circleci.com/gh/adam-golab/eslint-config-brainhub.svg?style=svg)](https://circleci.com/gh/adam-golab/eslint-config-brainhub)
+[![Greenkeeper badge](https://badges.greenkeeper.io/adam-golab/eslint-config-brainhub.svg)](https://greenkeeper.io/)
 
 ## Installation
 
