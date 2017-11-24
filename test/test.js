@@ -1,4 +1,4 @@
- 'use strict';
+'use strict';
 
 const assert = require('assert');
 const eslint = require('eslint');
@@ -15,6 +15,10 @@ const eslintOpts = {
   envs: ['node', 'es6'],
   useEslintrc: false,
   rules: conf.rules,
+  plugins: [
+    'react',
+    'import',
+  ],
 };
 
 // Runs the linter on the repo files and asserts no errors were found.
