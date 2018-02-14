@@ -15,10 +15,7 @@ const eslintOpts = {
   envs: ['node', 'es6'],
   useEslintrc: false,
   rules: conf.rules,
-  plugins: [
-    'react',
-    'import',
-  ],
+  plugins: conf.plugins,
 };
 
 // Runs the linter on the repo files and asserts no errors were found.
