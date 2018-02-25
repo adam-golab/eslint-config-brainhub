@@ -37,6 +37,7 @@ module.exports = {
       requireReturn: false,
       prefer: { returns: 'return' },
     }],
+    'class-methods-use-this': 2,
     curly: 2,
     'default-case': 2,
     'dot-notation': 2,
