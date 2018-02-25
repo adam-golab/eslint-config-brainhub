@@ -182,7 +182,6 @@ module.exports = {
     'import/extensions': [2, { js: 'never', jsx: 'never', json: 'never' }],
     'import/newline-after-import': 2,
     'import/no-named-default': 2,
-    'babel/new-cap': 2,
     'babel/object-curly-spacing': [2, 'always'],
     'babel/no-invalid-this': 2,
     'babel/semi': 2,
