@@ -6,7 +6,7 @@
   "repository": "adam-golab/eslint-config-brainhub",
   "author": "Adam Gołąb",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=6.0.0"
   },
   "scripts": {
     "test": "node test/test.js"
@@ -38,7 +38,7 @@
     "eslint": "^5.0.1"
   },
   "peerDependencies": {
-    "eslint": ">=4.0.0"
+    "eslint": ">=5.0.0"
   },
   "dependencies": {
     "babel-eslint": "^8.2.1",
