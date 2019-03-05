@@ -24,7 +24,7 @@ module.exports = {
     'react',
     'import',
   ],
-  settings:{
+  settings: {
     react: {
       version: 'detect',
     },
