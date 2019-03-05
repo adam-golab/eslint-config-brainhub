@@ -24,6 +24,11 @@ module.exports = {
     'react',
     'import',
   ],
+  settings:{
+    react: {
+      version: 'detect',
+    },
+  },
   rules: {
     'no-cond-assign': 2,
     'no-console': 1,
