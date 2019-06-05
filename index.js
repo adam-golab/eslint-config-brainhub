@@ -158,6 +158,7 @@ module.exports = {
     'rest-spread-spacing': 2,
     'yield-star-spacing': [2, 'before'],
     'react/forbid-prop-types': [2, { forbid: ['any', 'array', 'object'] }],
+    'react/no-access-state-in-setstate': 2,
     'react/no-children-prop': 2,
     'react/no-danger-with-children': 2,
     'react/no-deprecated': 2,
