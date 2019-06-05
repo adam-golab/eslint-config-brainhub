@@ -1836,6 +1836,22 @@ propTypes: {
 },
 ```
 
+### react/no-access-state-in-setState
+
+This rule should prevent usage of `this.state` inside `setState` calls. Such usage of `this.state` might result in errors when two state calls are called in batch and thus referencing old state and not the current state.
+
+```javascript
+// INCORRECT
+function increment() {
+  this.setState({value: this.state.value + 1});
+}
+
+// CORRECT
+function increment() {
+  this.setState(prevState => ({value: prevState.value + 1}));
+}
+```
+
 ### react/no-children-prop (**error**)
 
 Children should always be actual children, not passed in as a prop.
