@@ -36,7 +36,7 @@
   ],
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.13.0"
+    "eslint": "^6.2.1"
   },
   "peerDependencies": {
     "babel-eslint": ">=9.0.0",
