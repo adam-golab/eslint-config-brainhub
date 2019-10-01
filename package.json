@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-brainhub",
-  "version": "1.11.0",
+  "version": "1.11.1",
   "description": "ESLint shareable config for the Brainhub style",
   "license": "Apache-2.0",
   "repository": "adam-golab/eslint-config-brainhub",
