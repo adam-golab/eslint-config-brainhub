@@ -2446,7 +2446,7 @@ import foo from './foo';
 foo();
 ```
 
-### import/no-named-default (**errorr**)
+### import/no-named-default (**error**)
 
 Reports use of a default export as a locally named import.
 
@@ -2458,4 +2458,26 @@ import { default as foo } from './foo';
 
 // CORRECT
 import foo from './foo';
+```
+
+### import/order' (**error**, *newlines-between*: always)
+
+Enforce a convention in the order of require() / import statements. The --fix option on the command line automatically fixes problems reported by this rule.
+
+More info: [link](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md)
+
+```javascript
+// INCORRECT
+import index from './';
+import fs from 'fs';
+import sibling from './foo';
+import path from 'path';
+
+// CORRECT
+import fs from 'fs';
+import path from 'path';
+
+import index from './';
+
+import sibling from './foo';
 ```
