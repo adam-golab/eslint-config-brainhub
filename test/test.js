@@ -1,7 +1,9 @@
 'use strict';
 
 const assert = require('assert');
+
 const eslint = require('eslint');
+
 const conf = require('../');
 
 // The source files to lint.
