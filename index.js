@@ -54,7 +54,7 @@ module.exports = {
         'componentDidUpdate',
         'componentWillUnmount',
         'componentDidCatch',
-      ]
+      ],
     }],
     curly: 2,
     'default-case': 2,
