@@ -1395,6 +1395,43 @@ function foo() {
 
 fn(foo);
 ```
+### space-in-parens (**never**, **never**)
+
+This rule will enforce consistent spacing directly inside of parentheses, by disallowing spaces to the right of ( and to the left of ).
+
+```javascript
+// INCORRECT
+foo( 'bar');
+foo('bar' );
+foo( 'bar' );
+
+var foo = ( 1 + 2 ) * 3;
+( function () { return 'bar'; }() );
+
+// CORRECT
+foo();
+
+foo('bar');
+
+var foo = (1 + 2) * 3;
+(function () { return 'bar'; }());
+```
+
+### space-infix-ops (**error**)
+
+This rule is aimed at ensuring there are spaces around infix operators.
+
+```javascript
+// INCORRECT
+const foo = a+b;
+
+const foo = (a=0) => { }
+
+// CORRECT
+const foo = a + b;
+
+const foo = (a = 0) => { }
+```
 
 ### spaced-comment (**error**, *always*)
 
